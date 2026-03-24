@@ -70,9 +70,9 @@ public class Libro {
     
     public String mostrarInfo() {
         return "Código: " + codigo +
-               "\nTítulo: " + titulo +
-               "\nAutor: " + autor +
-               "\nCantidad: " + cantidad +
-               "Disponible: " + (disponible ? "Si" : "No");
+               "\n Título: " + titulo +
+               "\n Autor: " + autor +
+               "\n Cantidad: " + cantidad +
+               "\n Disponible: " + (disponible ? "Si" : "No");
     }
 }
