@@ -14,6 +14,7 @@ public class Libro {
     private String titulo;
     private String autor;
     private int cantidad;
+    public boolean disponible;
 
     
     public Libro(String codigo, String titulo, String autor, int cantidad) {
@@ -57,12 +58,21 @@ public class Libro {
             this.cantidad = cantidad;
         }
     }
+    
+    public boolean isDisponible() {
+    return disponible;
+    }
+    
+    public void setDisponible(boolean disponible) {
+    this.disponible = disponible;
+    }
 
     
     public String mostrarInfo() {
         return "Código: " + codigo +
                "\nTítulo: " + titulo +
                "\nAutor: " + autor +
-               "\nCantidad: " + cantidad;
+               "\nCantidad: " + cantidad +
+               "Disponible: " + (disponible ? "Si" : "No");
     }
 }
