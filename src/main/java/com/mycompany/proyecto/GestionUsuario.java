@@ -27,17 +27,17 @@ public class GestionUsuario {
     }
 
     public String obtenerResumen(int numero) {
-        return "Usuario #\n" + numero +
-               "Nombre: \n" + nombre +
-               "Correo: \n" + correo +
-               "Identificación: \n" + identificacion + "\n";
+        return "Usuario #" + numero +
+               "\n Nombre: " + nombre +
+               "\n Correo: " + correo +
+               "\n Identificación: " + identificacion + "\n";
     }
 
     public void mostrarDatos() {
         JOptionPane.showMessageDialog(null,
-            "Nombre: \n" + nombre +
-            "Correo: \n" + correo +
-            "Identificación: \n" + identificacion);
+            "Nombre: " + nombre +
+            "\n Correo: " + correo +
+            "\n Identificación: " + identificacion);
     }
 
     public String getNombre() {
